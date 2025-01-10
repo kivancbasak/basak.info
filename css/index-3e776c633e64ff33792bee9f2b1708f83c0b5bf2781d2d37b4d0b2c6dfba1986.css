@@ -4,7 +4,10 @@ body { margin: 0; }
    background-color: #b8dac5;
 }
 #iyv1 {
-   min-height: 800px; max-width: 800px; background-color: #fefefc;
+   width: 45%;          /* Set width as 45% of the parent/container */
+   height: 0;
+   padding-bottom: 45%; /* The height will be 45% of the width (aspect ratio of 1:1) */
+   background-color: #fefefc;
 }
 #i9r3 {
    padding: 10px; position: static;
@@ -13,13 +16,14 @@ body { margin: 0; }
    font-family: "Fira Sans", sans-serif; font-weight: 700;
 }
 #ilsj {
-   padding: 10px; min-height: 710px;
+   padding: 10px; min-height: 45vh;  /* Ensure this height is also responsive */
 }
 #iqe0x {
-   font-family: "Fira Sans", sans-serif; font-size: 12px; text-align: justify;
+   font-family: "Fira Sans", sans-serif; font-size: 3vw; /* Font size based on viewport width */
+   text-align: justify;
 }
 #itawb {
-   padding: 10px; font-family: "Fira Sans", sans-serif; font-size: 12px; min-height: 50px;
+   padding: 10px; font-family: "Fira Sans", sans-serif; font-size: 3vw; min-height: 10vh; /* Adjust based on viewport */
 }
 #itawb a {
    color: #000000; text-decoration: none;
