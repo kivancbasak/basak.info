@@ -2,12 +2,17 @@
 body { margin: 0; }
 #iuxb {
    background-color: #b8dac5;
+   overflow: hidden;   /* Prevent content from spilling outside the box */
 }
 #iyv1 {
    width: 45%;          /* Set width as 45% of the parent/container */
    height: 0;
    padding-bottom: 45%; /* The height will be 45% of the width (aspect ratio of 1:1) */
    background-color: #fefefc;
+   display: flex;       /* Use flexbox to manage child content */
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 #i9r3 {
    padding: 10px; position: static;
@@ -16,13 +21,13 @@ body { margin: 0; }
    font-family: "Fira Sans", sans-serif; font-weight: 700;
 }
 #ilsj {
-   padding: 10px; min-height: 710px;  /* Kept original height, no changes */
+   padding: 10px; min-height: 710px;  /* Kept original height */
 }
 #iqe0x {
-   font-family: "Fira Sans", sans-serif; font-size: 12px; text-align: justify;  /* Kept original font size */
+   font-family: "Fira Sans", sans-serif; font-size: 12px; text-align: justify;
 }
 #itawb {
-   padding: 10px; font-family: "Fira Sans", sans-serif; font-size: 12px; min-height: 50px;  /* Kept original font size and height */
+   padding: 10px; font-family: "Fira Sans", sans-serif; font-size: 12px; min-height: 50px;
 }
 #itawb a {
    color: #000000; text-decoration: none;
