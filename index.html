@@ -10,6 +10,23 @@
       <link href="https://fonts.googleapis.com/css?family=Fira+Sans:regular,italic&amp;display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:regular,italic&amp;display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:regular,italic&amp;display=swap" rel="stylesheet">
+      <script>
+         document.addEventListener('DOMContentLoaded', () => {
+            const body = document.getElementById('iuxb');
+            const links = document.querySelectorAll('#itawb a');
+            const pastelColors = ['#f3d5b5', '#d5e1df', '#f0ead6', '#d1c4e9'];
+
+            links.forEach((link, index) => {
+               link.addEventListener('mouseover', () => {
+                  body.style.backgroundColor = pastelColors[index % pastelColors.length];
+               });
+
+               link.addEventListener('mouseout', () => {
+                  body.style.backgroundColor = '#b8dac5'; // Original color
+               });
+            });
+         });
+      </script>
    </head>
    <body id="iuxb">
       <div id="iyv1">
