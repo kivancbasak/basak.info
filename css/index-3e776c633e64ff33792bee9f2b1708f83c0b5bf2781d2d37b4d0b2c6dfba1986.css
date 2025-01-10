@@ -1,51 +1,53 @@
-/* General Reset */
-* {
-    box-sizing: border-box;
+* { box-sizing: border-box;
 }
-body {
-    margin: 0;
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+ body { margin: 0;
 }
-
-#iuxb {
-    background-color: #b8dac5; /* Main background color */
+#iuxb{
+    background-color:#b8dac5; background-repeat:unset; background-position:unset; background-attachment:unset; background-size:unset; background-image:unset; background-image-color:unset; background-image-gradient:unset; background-image-gradient-dir:unset; 
+    background-image-gradient-type:unset;
 }
-
-/* Container styles */
-#iyv1 {
-    min-height: 600px;
-    max-width: 600px;
-    background-color: #e4e4e4;
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+#iyv1{
+    min-height:600px; max-width:600px; background-color:#e4e4e4;
 }
-
-/* Link styles */
-#ihca5, #ilxji, #i3xlg, #iitwk, #i0ef6, #iyh2a, #igu32, #istyv, #imf4h {
-    color: #000000;
-    text-decoration: none; /* Remove underline from links */
+#i9r3{
+    padding:10px; position:static;
 }
-
-/* Hover effect for links */
-#ihca5:hover, #ilxji:hover, #i3xlg:hover, #iitwk:hover, #i0ef6:hover, #iyh2a:hover, #igu32:hover, #istyv:hover, #imf4h:hover {
-    /* No change to link background, instead trigger container background change */
-    cursor: pointer; /* Indicate clickable links */
+#i7r7{
+    font-family:"Fira Sans", sans-serif; font-weight:700;
 }
-
-/* Hover effect on parent container when links are hovered */
-#ihca5:hover ~ #iyv1,
-#ilxji:hover ~ #iyv1,
-#i3xlg:hover ~ #iyv1,
-#iitwk:hover ~ #iyv1,
-#i0ef6:hover ~ #iyv1,
-#iyh2a:hover ~ #iyv1,
-#igu32:hover ~ #iyv1,
-#istyv:hover ~ #iyv1,
-#imf4h:hover ~ #iyv1 {
-    background-color: #b8dac5; /* Change background of the container when any link is hovered */
+#ilsj{
+    padding:10px; min-height:510px;
 }
-
-/* Smooth transition for the background color */
-#iyv1 {
-    transition: background-color 0.3s ease;
+#iqe0x{
+    font-family:"Fira Sans", sans-serif; font-size:12px; text-align:justify;
 }
-
+#itawb{
+    padding:10px; font-family:"Fira Sans", sans-serif; font-size:12px; min-height:50px;
+}
+#ihca5{
+    color:#000000;
+}
+#ilxji{
+    color:#000000;
+}
+#i3xlg{
+    color:#000000;
+}
+#iitwk{
+    color:#000000;
+}
+#i0ef6{
+    color:#000000;
+}
+#iyh2a{
+    color:#000000;
+}
+#igu32{
+    color:#000000;
+}
+#istyv{
+    color:#000000;
+}
+#imf4h{
+    color:#000000;
+}
