@@ -16,14 +16,13 @@ body { margin: 0; }
    font-family: "Fira Sans", sans-serif; font-weight: 700;
 }
 #ilsj {
-   padding: 10px; min-height: 45vh;  /* Ensure this height is also responsive */
+   padding: 10px; min-height: 710px;  /* Kept original height, no changes */
 }
 #iqe0x {
-   font-family: "Fira Sans", sans-serif; font-size: 3vw; /* Font size based on viewport width */
-   text-align: justify;
+   font-family: "Fira Sans", sans-serif; font-size: 12px; text-align: justify;  /* Kept original font size */
 }
 #itawb {
-   padding: 10px; font-family: "Fira Sans", sans-serif; font-size: 3vw; min-height: 10vh; /* Adjust based on viewport */
+   padding: 10px; font-family: "Fira Sans", sans-serif; font-size: 12px; min-height: 50px;  /* Kept original font size and height */
 }
 #itawb a {
    color: #000000; text-decoration: none;
