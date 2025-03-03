@@ -13,19 +13,38 @@
       <script>
          document.addEventListener('DOMContentLoaded', () => {
             const body = document.getElementById('iuxb');
+            const descriptionText = document.getElementById('iqe0x');
             const links = document.querySelectorAll('#itawb a');
-            const pastelColors = ['#f3d5b5', '#d5e1df', '#f0ead6', '#d1c4e9'];
+
+            const pastelColors = ['#f3d5b5', '#d5e1df', '#f0ead6', '#d1c4e9', '#ffcccb', '#d0f0c0', '#add8e6', '#ffdab9', '#e6e6fa'];
+            
+            const hoverTexts = [
+               "This is the text for Link 1.",
+               "Here comes the new text for Link 2.",
+               "Something different appears for Link 3.",
+               "Look at this change for Link 4!",
+               "Hovering over Link 5 reveals this.",
+               "This text is linked to Link 6.",
+               "Link 7 gives you this fresh content.",
+               "Surprise! This is for Link 8.",
+               "Final text swap for Link 9."
+            ];
+
+            const originalDescription = descriptionText.textContent;
 
             links.forEach((link, index) => {
                link.addEventListener('mouseover', () => {
-                  body.style.backgroundColor = pastelColors[index % pastelColors.length];
+                     body.style.backgroundColor = pastelColors[index % pastelColors.length];
+                     descriptionText.textContent = hoverTexts[index];
                });
 
                link.addEventListener('mouseout', () => {
-                  body.style.backgroundColor = '#b8dac5'; // Original color
+                     body.style.backgroundColor = '#b8dac5'; // Original color
+                     descriptionText.textContent = originalDescription;
                });
             });
          });
+
       </script>
    </head>
    <body id="iuxb">
