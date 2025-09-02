@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="tr">
    <head>
       <meta charset="UTF-8">
       <link rel="stylesheet" href="css/index-3e776c633e64ff33792bee9f2b1708f83c0b5bf2781d2d37b4d0b2c6dfba1986.css">
@@ -7,9 +7,9 @@
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
       <link href="https://fonts.googleapis.com/css?family=Fira+Code:regular&amp;display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Fira+Mono:regular&amp;display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Fira+Sans:regular,italic&amp;display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:regular,italic&amp;display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:regular,italic&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans:regular,italic&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:regular,italic&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:regular,italic&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
       <script>
          document.addEventListener('DOMContentLoaded', () => {
             const body = document.getElementById('iuxb');
@@ -30,7 +30,8 @@
                "Final text swap for Link 9."
             ];
 
-            const originalDescription = descriptionText.textContent;
+            // Preserve original HTML so bold markup returns after hover
+            const originalDescription = descriptionText.innerHTML;
 
             links.forEach((link, index) => {
                link.addEventListener('mouseover', () => {
@@ -40,7 +41,8 @@
 
                link.addEventListener('mouseout', () => {
                      body.style.backgroundColor = '#b8dac5'; // Original color
-                     descriptionText.textContent = originalDescription;
+                     // Restore original HTML (including <b> tags)
+                     descriptionText.innerHTML = originalDescription;
                });
             });
          });
@@ -49,14 +51,14 @@
    </head>
    <body id="iuxb">
       <div id="iyv1">
-         <div id="i9r3"><span id="i7r7">Hello I am Kıvanç&nbsp;</span></div>
+         <div id="i9r3"><span id="i7r7">Hello I am Kıvanç Başak&nbsp;</span></div>
 <div id="ilsj">
   <span id="iqe0x">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>I am an architect.</b> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. <b>I also do project management.</b> Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate. <b>And yes, I do it in a nerdy way.</b> Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </span>
 </div>
          <div id="itawb">
-            <a href="files/basak_cv.pdf" id="ihca5">Resume</a>&nbsp;| 
+            <a href="files/__basak_cv.pdf" id="ihca5">Resume</a>&nbsp;| 
             <a href="" id="ilxji">Link 2</a>&nbsp;| 
             <a href="" id="i3xlg">Link 3</a> | 
             <a href="" id="iitwk">Link 4</a> | 
@@ -68,4 +70,4 @@
          </div>
       </div>
    </body>
-</html>
+   </html>
