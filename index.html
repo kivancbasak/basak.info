@@ -30,13 +30,31 @@
                "Final text swap for Link 9."
             ];
 
+            // Optional HTML to use on hover (only for specific links)
+            const hoverHTML = [
+               "<b>click for my resume</b><br><b>contact kivanc@basak.info</b>",
+               null,
+               null,
+               null,
+               null,
+               null,
+               null,
+               null,
+               null
+            ];
+
             // Preserve original HTML so bold markup returns after hover
             const originalDescription = descriptionText.innerHTML;
 
             links.forEach((link, index) => {
                link.addEventListener('mouseover', () => {
                      body.style.backgroundColor = pastelColors[index % pastelColors.length];
-                     descriptionText.textContent = hoverTexts[index];
+                     const html = hoverHTML[index];
+                     if (html) {
+                        descriptionText.innerHTML = html;
+                     } else {
+                        descriptionText.textContent = hoverTexts[index];
+                     }
                });
 
                link.addEventListener('mouseout', () => {
